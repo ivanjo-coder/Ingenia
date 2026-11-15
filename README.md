@@ -2,7 +2,7 @@
 
 App web para estudiar asignaturas de ingeniería con tarjetas, tests y problemas con números que cambian. Interfaz y contenido en catalán y castellano.
 
-**Estado:** Fase 2 terminada (estudio con los cuatro tipos de tarjeta, repaso espaciado y progreso guardado en el dispositivo).
+**Estado:** Fases 1 a 4 terminadas (estudio con repaso espaciado, test rápido, simulacro, progreso y copia de seguridad). Falta el contenido real (Fase 5) y publicar (Fase 6).
 
 ## Instalar en Windows (solo la primera vez)
 
@@ -31,7 +31,7 @@ Para verla en el móvil (misma wifi que el ordenador): `npm run dev -- --host` y
 | Comando | Qué hace | Qué deberías ver |
 | --- | --- | --- |
 | `npm run validar` | Revisa todas las tarjetas | `Todo correcto: no hay errores en el contenido.` |
-| `npm run test` | Pasa los tests automáticos | `Tests  41 passed` (el número irá creciendo) |
+| `npm run test` | Pasa los tests automáticos | `Tests  50 passed` (el número irá creciendo) |
 | `npm run build` | Prepara la app para publicar (carpeta `dist/`) | `✓ built in ...` |
 | `npm run comprobar` | Los tres anteriores seguidos | Lo mismo, sin errores |
 

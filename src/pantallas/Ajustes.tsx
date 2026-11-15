@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { guardarNuevasPorDia, NUEVAS_POR_DIA_OPCIONES, useNuevasPorDia } from '../datos/ajustes'
+import { CopiaSeguridad } from '../componentes/CopiaSeguridad'
 import { SelectorIdioma } from '../componentes/SelectorIdioma'
 
 export function Ajustes() {
@@ -30,6 +31,7 @@ export function Ajustes() {
           ))}
         </select>
       </section>
+      <CopiaSeguridad />
     </>
   )
 }

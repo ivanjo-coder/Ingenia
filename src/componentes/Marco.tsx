@@ -5,6 +5,7 @@ import { SelectorIdioma } from './SelectorIdioma'
 
 const ICONOS = {
   inicio: 'M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z',
+  progreso: 'M4 20V10M10 20V4M16 20v-7M22 20H2',
   ajustes: 'M4 6h10M18 6h2M4 12h2M10 12h10M4 18h10M18 18h2M16 4v4M8 10v4M16 16v4',
   sobre: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 11v6M12 7.5v.5',
 }
@@ -51,6 +52,7 @@ export function Marco() {
       <nav aria-label={t('nav.principal')} className="fixed inset-x-0 bottom-0 z-10 border-t border-slate-200 bg-white pb-[env(safe-area-inset-bottom)] dark:border-slate-800 dark:bg-slate-900">
         <div className="mx-auto flex max-w-2xl">
           <Pestana a="/" icono="inicio" texto={t('nav.inicio')} />
+          <Pestana a="/progreso" icono="progreso" texto={t('nav.progreso')} />
           <Pestana a="/ajustes" icono="ajustes" texto={t('nav.ajustes')} />
           <Pestana a="/sobre" icono="sobre" texto={t('nav.sobre')} />
         </div>

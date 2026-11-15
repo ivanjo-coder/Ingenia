@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useParams } from 'react-router'
+import { Link, useParams } from 'react-router'
 import { BloqueRepaso } from '../componentes/BloqueRepaso'
 import { Aviso, Volver } from '../componentes/Marco'
 import { VistaTarjeta } from '../componentes/VistaTarjeta'
@@ -36,6 +36,13 @@ export function Tema() {
       <h1 className="text-2xl font-bold tracking-tight">{elegir(tema.nombre, idioma)}</h1>
 
       <BloqueRepaso tarjetas={tema.tarjetas} a={`/repaso/${asignatura.id}/${tema.id}`} textoBoton={t('repaso.estudiar')} conFases />
+      <Link to={`/test/${asignatura.id}/${tema.id}`} className="mt-3 flex min-h-14 items-center justify-between gap-3 rounded-xl border-2 border-marca-700 bg-white px-4 py-2 hover:bg-marca-50 dark:bg-slate-900 dark:hover:bg-marca-900/40">
+        <span>
+          <span className="block font-bold text-marca-800 dark:text-marca-300">{t('examen.rapido')}</span>
+          <span className="text-sm text-slate-600 dark:text-slate-400">{t('examen.rapidoTexto')}</span>
+        </span>
+        <span aria-hidden="true" className="text-2xl text-marca-700 dark:text-marca-300">›</span>
+      </Link>
 
       <h2 className="mt-7 text-sm font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-400">{t('repaso.todasLasTarjetas')}</h2>
       <div role="group" aria-label={t('tema.filtro')} className="-mx-4 mt-2 flex gap-2 overflow-x-auto px-4 py-1">

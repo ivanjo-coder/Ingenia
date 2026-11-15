@@ -41,6 +41,13 @@ export function Asignatura() {
               </li>
             ))}
           </ol>
+              <Link to={`/simulacro/${asignatura.id}`} className="mt-3 flex min-h-14 items-center justify-between gap-3 rounded-xl border-2 border-marca-700 bg-white px-4 py-2 hover:bg-marca-50 dark:bg-slate-900 dark:hover:bg-marca-900/40">
+                <span>
+                  <span className="block font-bold text-marca-800 dark:text-marca-300">{t('examen.simulacro')}</span>
+                  <span className="text-sm text-slate-600 dark:text-slate-400">{t('examen.simulacroTexto')}</span>
+                    </span>
+                <span aria-hidden="true" className="text-2xl text-marca-700 dark:text-marca-300">›</span>
+                  </Link>
         </>
       )}
     </>

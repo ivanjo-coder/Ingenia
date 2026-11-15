@@ -1,0 +1,30 @@
+{
+  "nav": { "inicio": "Inicio", "ajustes": "Ajustes", "sobre": "Sobre la app", "principal": "Navegación principal", "saltar": "Saltar al contenido" },
+  "idioma": { "titulo": "Idioma", "ca": "Català", "es": "Castellano", "cambiar": "Cambiar idioma" },
+  "inicio": { "titulo": "Asignaturas", "subtitulo": "Elige una asignatura para empezar a estudiar.", "proximamente": "Próximamente" },
+  "asignatura": { "temas": "Temas", "tarjetas_one": "{{count}} tarjeta", "tarjetas_other": "{{count}} tarjetas", "sinTemas": "Esta asignatura todavía no tiene contenido." },
+  "tema": { "todas": "Todas", "verRespuesta": "Ver respuesta", "verResolucion": "Ver resolución", "ejemplo": "Datos de ejemplo: cambian cada vez que sale el problema.", "resultado": "Resultado", "correcta": "Correcta", "incorrecta": "Incorrecta", "filtro": "Filtrar por tipo de tarjeta" },
+  "tipo": { "concepto": "Concepto", "formula": "Fórmula", "test": "Test", "problema": "Problema" },
+  "tipoPlural": { "concepto": "Conceptos", "formula": "Fórmulas", "test": "Tests", "problema": "Problemas" },
+  "formula": { "simbolo": "Símbolo", "significado": "Significado", "unidad": "Unidad" },
+  "volver": "Volver",
+  "revisar": "Pendiente de revisar",
+  "aviso": "Contenido creado por estudiantes. Puede contener errores: contrasta siempre con el material oficial de la asignatura.",
+  "noEncontrado": { "titulo": "Aquí no hay nada", "texto": "Esta página no existe o ha cambiado de sitio.", "inicio": "Ir al inicio" },
+  "errorContenido": { "titulo": "Hay errores en el contenido", "texto": "Arregla estos archivos de la carpeta contenido/ y la app volverá a funcionar. El comando «npm run validar» da más detalles." },
+  "ajustes": { "titulo": "Ajustes" },
+  "sobre": {
+    "titulo": "Sobre {{nombre}}",
+    "intro": "{{nombre}} es una app para estudiar asignaturas de ingeniería con tarjetas, tests y problemas con números que cambian. La hacemos estudiantes, para estudiantes.",
+    "promesas": "Nuestras tres promesas",
+    "p1t": "Estudiar es gratis y sin límite",
+    "p1": "Ningún modo de estudio está detrás de un pago.",
+    "p2t": "Sin anuncios mientras estudias",
+    "p2": "Nunca verás publicidad durante una sesión de estudio.",
+    "p3t": "Si algún día hay algo de pago, será claro",
+    "p3": "Precio a la vista, sin renovaciones por sorpresa y cancelación en un clic.",
+    "privacidad": "Privacidad",
+    "privacidadTexto": "No hay cuentas ni registro, y no usamos rastreadores publicitarios. Tu progreso se guarda solo en este dispositivo.",
+    "contenido": "Sobre el contenido"
+  }
+}

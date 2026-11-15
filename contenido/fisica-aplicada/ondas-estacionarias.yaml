@@ -1,0 +1,164 @@
+# CONTENIDO DE EJEMPLO (Fases 1 a 4). El contenido real llega en la Fase 5.
+
+- id: fis-est-c01
+  tipo: concepto
+  pregunta:
+    es: ¿Cómo se forma una onda estacionaria?
+    ca: Com es forma una ona estacionària?
+  respuesta:
+    es: >-
+      Por la superposición de dos ondas de la misma frecuencia y amplitud que viajan en
+      sentidos opuestos (por ejemplo, una onda y su reflexión). El resultado no avanza,
+      cada punto oscila siempre con la misma amplitud.
+    ca: >-
+      Per la superposició de dues ones de la mateixa freqüència i amplitud que viatgen en
+      sentits oposats (per exemple, una ona i la seva reflexió). El resultat no avança,
+      cada punt oscil·la sempre amb la mateixa amplitud.
+
+- id: fis-est-c02
+  tipo: concepto
+  pregunta:
+    es: En una onda estacionaria, ¿qué son los nodos y los vientres?
+    ca: En una ona estacionària, què són els nodes i els ventres?
+  respuesta:
+    es: >-
+      Los nodos son los puntos que no se mueven nunca (amplitud cero). Los vientres o
+      antinodos son los puntos que oscilan con amplitud máxima. Entre dos nodos seguidos
+      hay una distancia de $\lambda / 2$.
+    ca: >-
+      Els nodes són els punts que no es mouen mai (amplitud zero). Els ventres o
+      antinodes són els punts que oscil·len amb amplitud màxima. Entre dos nodes seguits
+      hi ha una distància de $\lambda / 2$.
+
+- id: fis-est-f01
+  tipo: formula
+  pregunta:
+    es: ¿Cuáles son las frecuencias propias de una cuerda fija por los dos extremos?
+    ca: Quines són les freqüències pròpies d'una corda fixa pels dos extrems?
+  expresion: f_n = \dfrac{n \, v}{2L}, \quad n = 1, 2, 3, \dots
+  simbolos:
+    - simbolo: f_n
+      significado: { es: frecuencia del armónico n, ca: freqüència de l'harmònic n }
+      unidad: Hz
+    - simbolo: v
+      significado: { es: velocidad de las ondas en la cuerda, ca: velocitat de les ones a la corda }
+      unidad: m/s
+    - simbolo: L
+      significado: { es: longitud de la cuerda, ca: longitud de la corda }
+      unidad: m
+
+- id: fis-est-f02
+  tipo: formula
+  pregunta:
+    es: ¿Cuáles son las frecuencias propias de un tubo cerrado por un extremo y abierto por el otro?
+    ca: Quines són les freqüències pròpies d'un tub tancat per un extrem i obert per l'altre?
+  expresion: f_n = \dfrac{n \, v}{4L}, \quad n = 1, 3, 5, \dots
+  simbolos:
+    - simbolo: f_n
+      significado: { es: frecuencia del armónico n, ca: freqüència de l'harmònic n }
+      unidad: Hz
+    - simbolo: v
+      significado: { es: velocidad del sonido en el aire del tubo, ca: velocitat del so a l'aire del tub }
+      unidad: m/s
+    - simbolo: L
+      significado: { es: longitud del tubo, ca: longitud del tub }
+      unidad: m
+  nota:
+    es: Solo existen los armónicos impares.
+    ca: Només existeixen els harmònics senars.
+
+- id: fis-est-t01
+  tipo: test
+  pregunta:
+    es: En una onda estacionaria de longitud de onda $\lambda$, ¿qué distancia hay entre un nodo y el vientre más cercano?
+    ca: En una ona estacionària de longitud d'ona $\lambda$, quina distància hi ha entre un node i el ventre més proper?
+  opciones:
+    - texto: { es: $\lambda / 4$, ca: $\lambda / 4$ }
+      correcta: true
+      explicacion:
+        es: Entre dos nodos seguidos hay $\lambda / 2$ y el vientre queda justo en medio, a $\lambda / 4$ de cada uno.
+        ca: Entre dos nodes seguits hi ha $\lambda / 2$ i el ventre queda just al mig, a $\lambda / 4$ de cadascun.
+    - texto: { es: $\lambda / 2$, ca: $\lambda / 2$ }
+      explicacion:
+        es: Esa es la distancia entre dos nodos seguidos (o entre dos vientres seguidos).
+        ca: Aquesta és la distància entre dos nodes seguits (o entre dos ventres seguits).
+    - texto: { es: $\lambda$, ca: $\lambda$ }
+      explicacion:
+        es: En una longitud de onda completa caben dos vientres y varios nodos.
+        ca: En una longitud d'ona completa hi caben dos ventres i diversos nodes.
+
+- id: fis-est-t02
+  tipo: test
+  pregunta:
+    es: Una cuerda fija por los dos extremos vibra en su tercer armónico. ¿Cuántos vientres tiene?
+    ca: Una corda fixa pels dos extrems vibra en el seu tercer harmònic. Quants ventres té?
+  opciones:
+    - texto: { es: Tres., ca: Tres. }
+      correcta: true
+      explicacion:
+        es: En el armónico $n$ caben $n$ medias longitudes de onda en la cuerda, y cada una tiene un vientre.
+        ca: A l'harmònic $n$ hi caben $n$ mitges longituds d'ona a la corda, i cadascuna té un ventre.
+    - texto: { es: Dos., ca: Dos. }
+      explicacion:
+        es: Dos vientres corresponden al segundo armónico.
+        ca: Dos ventres corresponen al segon harmònic.
+    - texto: { es: Cuatro., ca: Quatre. }
+      explicacion:
+        es: Cuatro es el número de nodos del tercer armónico (contando los dos extremos), no el de vientres.
+        ca: Quatre és el nombre de nodes del tercer harmònic (comptant els dos extrems), no el de ventres.
+
+- id: fis-est-p01
+  tipo: problema
+  enunciado:
+    es: >-
+      Una cuerda de {L} m de longitud está fija por los dos extremos. Las ondas viajan por
+      ella a {v} m/s. Calcula la frecuencia del armónico número {n}.
+    ca: >-
+      Una corda de {L} m de longitud està fixa pels dos extrems. Les ones hi viatgen
+      a {v} m/s. Calcula la freqüència de l'harmònic número {n}.
+  variables:
+    L: { min: 0.5, max: 2, paso: 0.1 }
+    v: { min: 100, max: 400, paso: 20 }
+    n: { min: 1, max: 5, paso: 1 }
+  respuesta:
+    expresion: n * v / (2 * L)
+    unidad: Hz
+    tolerancia_relativa: 0.01
+  resolucion:
+    es:
+      - Frecuencias propias de una cuerda fija por los dos extremos $f_n = \dfrac{n \, v}{2L}$
+      - Sustituyendo $f = \dfrac{\val{n} \cdot \val{v}}{2 \cdot \val{L}}$ = {resultado} Hz
+    ca:
+      - Freqüències pròpies d'una corda fixa pels dos extrems $f_n = \dfrac{n \, v}{2L}$
+      - Substituint $f = \dfrac{\val{n} \cdot \val{v}}{2 \cdot \val{L}}$ = {resultado} Hz
+  casos_prueba:
+    - { L: 0.8, v: 240, n: 3, resultado: 450 }
+
+- id: fis-est-p02
+  tipo: problema
+  enunciado:
+    es: >-
+      Un tubo de {L} cm de longitud está cerrado por un extremo y abierto por el otro.
+      Calcula su frecuencia fundamental. Toma 340 m/s como velocidad del sonido.
+    ca: >-
+      Un tub de {L} cm de longitud està tancat per un extrem i obert per l'altre.
+      Calcula la seva freqüència fonamental. Pren 340 m/s com a velocitat del so.
+  variables:
+    L: { min: 20, max: 100, paso: 5 }
+  intermedios:
+    L_m: L / 100
+  respuesta:
+    expresion: 340 / (4 * L_m)
+    unidad: Hz
+    tolerancia_relativa: 0.01
+  resolucion:
+    es:
+      - Longitud en metros {L} cm = {L_m} m
+      - En el modo fundamental cabe un cuarto de longitud de onda en el tubo, así que $\lambda = 4L$
+      - Frecuencia $f_1 = \dfrac{v}{4L} = \dfrac{340}{4 \cdot \val{L_m}}$ = {resultado} Hz
+    ca:
+      - Longitud en metres {L} cm = {L_m} m
+      - En el mode fonamental hi cap un quart de longitud d'ona al tub, de manera que $\lambda = 4L$
+      - Freqüència $f_1 = \dfrac{v}{4L} = \dfrac{340}{4 \cdot \val{L_m}}$ = {resultado} Hz
+  casos_prueba:
+    - { L: 50, resultado: 170 }

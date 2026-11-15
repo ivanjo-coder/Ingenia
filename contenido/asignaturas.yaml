@@ -1,0 +1,23 @@
+# Lista de asignaturas, en el orden en que salen en la app.
+# estado: disponible (tiene contenido) o proximamente (todavía no).
+- id: fisica-aplicada
+  nombre: { ca: Física Aplicada, es: Física Aplicada }
+  estado: disponible
+- id: fonaments-matematics
+  nombre: { ca: Fonaments Matemàtics, es: Fundamentos Matemáticos }
+  estado: proximamente
+- id: mecanica-1
+  nombre: { ca: Mecànica I, es: Mecánica I }
+  estado: proximamente
+- id: calcul
+  nombre: { ca: Càlcul, es: Cálculo }
+  estado: proximamente
+- id: algebra-lineal
+  nombre: { ca: Àlgebra Lineal, es: Álgebra Lineal }
+  estado: proximamente
+- id: quimica-materials
+  nombre: { ca: Química de Materials, es: Química de Materiales }
+  estado: proximamente
+- id: expressio-grafica
+  nombre: { ca: Expressió Gràfica, es: Expresión Gráfica }
+  estado: proximamente

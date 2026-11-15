@@ -1,0 +1,6 @@
+# Temas de la asignatura, en orden. Cada tema tiene su archivo: <id>.yaml
+temas:
+  - id: fluidos
+    nombre: { ca: Fluids, es: Fluidos }
+  - id: ondas-estacionarias
+    nombre: { ca: Ones estacionàries, es: Ondas estacionarias }

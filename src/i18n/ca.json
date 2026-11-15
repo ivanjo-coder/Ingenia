@@ -1,0 +1,30 @@
+{
+  "nav": { "inicio": "Inici", "ajustes": "Configuració", "sobre": "Sobre l'app", "principal": "Navegació principal", "saltar": "Salta al contingut" },
+  "idioma": { "titulo": "Idioma", "ca": "Català", "es": "Castellano", "cambiar": "Canvia l'idioma" },
+  "inicio": { "titulo": "Assignatures", "subtitulo": "Tria una assignatura per començar a estudiar.", "proximamente": "Properament" },
+  "asignatura": { "temas": "Temes", "tarjetas_one": "{{count}} targeta", "tarjetas_other": "{{count}} targetes", "sinTemas": "Aquesta assignatura encara no té contingut." },
+  "tema": { "todas": "Totes", "verRespuesta": "Mostra la resposta", "verResolucion": "Mostra la resolució", "ejemplo": "Dades d'exemple: canvien cada vegada que surt el problema.", "resultado": "Resultat", "correcta": "Correcta", "incorrecta": "Incorrecta", "filtro": "Filtra per tipus de targeta" },
+  "tipo": { "concepto": "Concepte", "formula": "Fórmula", "test": "Test", "problema": "Problema" },
+  "tipoPlural": { "concepto": "Conceptes", "formula": "Fórmules", "test": "Tests", "problema": "Problemes" },
+  "formula": { "simbolo": "Símbol", "significado": "Significat", "unidad": "Unitat" },
+  "volver": "Torna",
+  "revisar": "Pendent de revisar",
+  "aviso": "Contingut creat per estudiants. Pot contenir errors: contrasta sempre amb el material oficial de l'assignatura.",
+  "noEncontrado": { "titulo": "Aquí no hi ha res", "texto": "Aquesta pàgina no existeix o ha canviat de lloc.", "inicio": "Ves a l'inici" },
+  "errorContenido": { "titulo": "Hi ha errors al contingut", "texto": "Arregla aquests fitxers de la carpeta contenido/ i l'app tornarà a funcionar. L'ordre «npm run validar» dona més detalls." },
+  "ajustes": { "titulo": "Configuració" },
+  "sobre": {
+    "titulo": "Sobre {{nombre}}",
+    "intro": "{{nombre}} és una app per estudiar assignatures d'enginyeria amb targetes, tests i problemes amb números que canvien. La fem estudiants, per a estudiants.",
+    "promesas": "Les nostres tres promeses",
+    "p1t": "Estudiar és gratis i sense límit",
+    "p1": "Cap mode d'estudi està darrere d'un pagament.",
+    "p2t": "Sense anuncis mentre estudies",
+    "p2": "No veuràs mai publicitat durant una sessió d'estudi.",
+    "p3t": "Si algun dia hi ha res de pagament, serà clar",
+    "p3": "Preu a la vista, sense renovacions per sorpresa i cancel·lació en un clic.",
+    "privacidad": "Privadesa",
+    "privacidadTexto": "No hi ha comptes ni registre, i no fem servir rastrejadors publicitaris. El teu progrés es desa només en aquest dispositiu.",
+    "contenido": "Sobre el contingut"
+  }
+}

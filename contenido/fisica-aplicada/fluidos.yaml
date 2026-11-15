@@ -1,0 +1,187 @@
+# CONTENIDO DE EJEMPLO (Fases 1 a 4). El contenido real llega en la Fase 5.
+
+- id: fis-flu-c01
+  tipo: concepto
+  pregunta:
+    es: ¿Qué dice el principio de Arquímedes?
+    ca: Què diu el principi d'Arquimedes?
+  respuesta:
+    es: >-
+      Todo cuerpo sumergido total o parcialmente en un fluido recibe un empuje vertical
+      hacia arriba igual al peso del fluido que desaloja: $E = \rho_f \, g \, V_{sum}$.
+    ca: >-
+      Tot cos submergit totalment o parcialment en un fluid rep una empenta vertical
+      cap amunt igual al pes del fluid que desallotja: $E = \rho_f \, g \, V_{sub}$.
+
+- id: fis-flu-c02
+  tipo: concepto
+  pregunta:
+    es: ¿Qué expresa la ecuación de continuidad para un fluido incompresible?
+    ca: Què expressa l'equació de continuïtat per a un fluid incompressible?
+  respuesta:
+    es: >-
+      Que el caudal se conserva a lo largo de la tubería: $A_1 v_1 = A_2 v_2$.
+      Donde la sección es más pequeña, el fluido va más rápido.
+    ca: >-
+      Que el cabal es conserva al llarg de la canonada: $A_1 v_1 = A_2 v_2$.
+      On la secció és més petita, el fluid va més ràpid.
+
+- id: fis-flu-f01
+  tipo: formula
+  pregunta:
+    es: ¿Cuál es la expresión de la presión a una profundidad $h$ en un líquido en reposo?
+    ca: Quina és l'expressió de la pressió a una profunditat $h$ en un líquid en repòs?
+  expresion: p = p_0 + \rho \, g \, h
+  simbolos:
+    - simbolo: p
+      significado: { es: presión a la profundidad h, ca: pressió a la profunditat h }
+      unidad: Pa
+    - simbolo: p_0
+      significado: { es: presión en la superficie libre, ca: pressió a la superfície lliure }
+      unidad: Pa
+    - simbolo: \rho
+      significado: { es: densidad del líquido, ca: densitat del líquid }
+      unidad: kg/m³
+    - simbolo: g
+      significado: { es: aceleración de la gravedad, ca: acceleració de la gravetat }
+      unidad: m/s²
+    - simbolo: h
+      significado: { es: profundidad bajo la superficie, ca: profunditat sota la superfície }
+      unidad: m
+
+- id: fis-flu-f02
+  tipo: formula
+  pregunta:
+    es: ¿Cuál es la ecuación de Bernoulli?
+    ca: Quina és l'equació de Bernoulli?
+  expresion: p + \tfrac{1}{2} \rho v^2 + \rho \, g \, z = \text{cte}
+  simbolos:
+    - simbolo: p
+      significado: { es: presión del fluido, ca: pressió del fluid }
+      unidad: Pa
+    - simbolo: \rho
+      significado: { es: densidad del fluido, ca: densitat del fluid }
+      unidad: kg/m³
+    - simbolo: v
+      significado: { es: velocidad del fluido, ca: velocitat del fluid }
+      unidad: m/s
+    - simbolo: z
+      significado: { es: altura respecto a una referencia, ca: alçada respecte a una referència }
+      unidad: m
+  nota:
+    es: Vale a lo largo de una línea de corriente, para un fluido ideal (incompresible y sin viscosidad) en régimen estacionario.
+    ca: Val al llarg d'una línia de corrent, per a un fluid ideal (incompressible i sense viscositat) en règim estacionari.
+
+- id: fis-flu-t01
+  tipo: test
+  pregunta:
+    es: Un bloque de madera flota en reposo en el agua, con parte de su volumen fuera. ¿Cuánto vale el empuje que recibe?
+    ca: Un bloc de fusta flota en repòs a l'aigua, amb part del seu volum a fora. Quant val l'empenta que rep?
+  opciones:
+    - texto: { es: Es igual al peso del bloque., ca: És igual al pes del bloc. }
+      correcta: true
+      explicacion:
+        es: El bloque está en equilibrio, así que la suma de fuerzas verticales es cero y el empuje compensa exactamente al peso.
+        ca: El bloc està en equilibri, de manera que la suma de forces verticals és zero i l'empenta compensa exactament el pes.
+    - texto: { es: Es mayor que el peso del bloque., ca: És més gran que el pes del bloc. }
+      explicacion:
+        es: Si fuera mayor, habría una fuerza neta hacia arriba y el bloque aceleraría, no estaría en reposo.
+        ca: Si fos més gran, hi hauria una força neta cap amunt i el bloc acceleraria, no estaria en repòs.
+    - texto:
+        es: Es igual al peso de un volumen de agua igual al volumen total del bloque.
+        ca: És igual al pes d'un volum d'aigua igual al volum total del bloc.
+      explicacion:
+        es: Solo cuenta el volumen sumergido. Con el volumen total el empuje sería mayor que el peso.
+        ca: Només compta el volum submergit. Amb el volum total l'empenta seria més gran que el pes.
+    - texto: { es: Es menor que el peso del bloque., ca: És més petita que el pes del bloc. }
+      explicacion:
+        es: Si fuera menor, el bloque se hundiría.
+        ca: Si fos més petita, el bloc s'enfonsaria.
+
+- id: fis-flu-t02
+  tipo: test
+  pregunta:
+    es: Por una tubería horizontal circula agua. En un tramo la tubería se estrecha. ¿Qué le pasa a la presión en el estrechamiento?
+    ca: Per una canonada horitzontal circula aigua. En un tram la canonada s'estreny. Què li passa a la pressió a l'estrenyiment?
+  opciones:
+    - texto: { es: Disminuye., ca: Disminueix. }
+      correcta: true
+      explicacion:
+        es: Por continuidad la velocidad aumenta, y por Bernoulli (a la misma altura) si $v$ aumenta, $p$ tiene que bajar.
+        ca: Per continuïtat la velocitat augmenta, i per Bernoulli (a la mateixa alçada) si $v$ augmenta, $p$ ha de baixar.
+    - texto: { es: Aumenta., ca: Augmenta. }
+      explicacion:
+        es: Es la intuición habitual, pero es al revés. El fluido se acelera al entrar en el estrechamiento, y para eso la presión de detrás debe ser mayor.
+        ca: És la intuïció habitual, però és al revés. El fluid s'accelera en entrar a l'estrenyiment, i per això la pressió del darrere ha de ser més gran.
+    - texto: { es: No cambia., ca: No canvia. }
+      explicacion:
+        es: Solo se mantendría si la velocidad no cambiara, y con una sección menor la velocidad aumenta.
+        ca: Només es mantindria si la velocitat no canviés, i amb una secció més petita la velocitat augmenta.
+
+- id: fis-flu-p01
+  tipo: problema
+  enunciado:
+    es: >-
+      Un buzo se encuentra a {h} m de profundidad en un lago de agua dulce
+      ($\rho = 1000$ kg/m³). Calcula la presión manométrica (la debida solo al agua)
+      que soporta. Toma $g = 9{,}81$ m/s².
+    ca: >-
+      Un bus es troba a {h} m de profunditat en un llac d'aigua dolça
+      ($\rho = 1000$ kg/m³). Calcula la pressió manomètrica (la deguda només a l'aigua)
+      que suporta. Pren $g = 9{,}81$ m/s².
+  variables:
+    h: { min: 2, max: 40, paso: 1 }
+  intermedios:
+    p_Pa: 1000 * 9.81 * h
+  respuesta:
+    expresion: p_Pa / 1000
+    unidad: kPa
+    tolerancia_relativa: 0.01
+  resolucion:
+    es:
+      - Presión manométrica $p = \rho \, g \, h = 1000 \cdot 9{,}81 \cdot \val{h}$ = {p_Pa} Pa
+      - Pasamos a kilopascales dividiendo entre 1000 y queda {resultado} kPa
+    ca:
+      - Pressió manomètrica $p = \rho \, g \, h = 1000 \cdot 9{,}81 \cdot \val{h}$ = {p_Pa} Pa
+      - Passem a quilopascals dividint entre 1000 i queda {resultado} kPa
+  casos_prueba:
+    - { h: 10, resultado: 98.1 }
+
+- id: fis-flu-p02
+  tipo: problema
+  figura:
+    pregunta: estrechamiento.svg
+    alt:
+      es: Tubería horizontal que pasa de un diámetro d1 a un diámetro d2 más pequeño.
+      ca: Canonada horitzontal que passa d'un diàmetre d1 a un diàmetre d2 més petit.
+  enunciado:
+    es: >-
+      Por una tubería de {d1} mm de diámetro circula agua a {v1} m/s. La tubería se
+      estrecha hasta un diámetro de {d2} mm. Calcula la velocidad del agua en el tramo estrecho.
+    ca: >-
+      Per una canonada de {d1} mm de diàmetre circula aigua a {v1} m/s. La canonada
+      s'estreny fins a un diàmetre de {d2} mm. Calcula la velocitat de l'aigua al tram estret.
+  variables:
+    d1: { min: 60, max: 200, paso: 20 }
+    d2: { min: 20, max: 100, paso: 10 }
+    v1: { min: 0.5, max: 3, paso: 0.5 }
+  condiciones:
+    - d2 < d1
+    - v1 * (d1 / d2)^2 <= 20
+  intermedios:
+    razon: d1 / d2
+  respuesta:
+    expresion: v1 * razon^2
+    unidad: m/s
+    tolerancia_relativa: 0.01
+  resolucion:
+    es:
+      - Continuidad $A_1 v_1 = A_2 v_2$, y como el área es proporcional a $d^2$ queda $v_2 = v_1 \left( \dfrac{d_1}{d_2} \right)^2$
+      - Relación de diámetros $d_1 / d_2$ = {razon}
+      - Velocidad $v_2 = \val{v1} \cdot \val{razon}^2$ = {resultado} m/s
+    ca:
+      - Continuïtat $A_1 v_1 = A_2 v_2$, i com que l'àrea és proporcional a $d^2$ queda $v_2 = v_1 \left( \dfrac{d_1}{d_2} \right)^2$
+      - Relació de diàmetres $d_1 / d_2$ = {razon}
+      - Velocitat $v_2 = \val{v1} \cdot \val{razon}^2$ = {resultado} m/s
+  casos_prueba:
+    - { d1: 100, d2: 50, v1: 2, resultado: 8 }

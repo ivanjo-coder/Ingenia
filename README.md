@@ -2,7 +2,7 @@
 
 App web para estudiar asignaturas de ingeniería con tarjetas, tests y problemas con números que cambian. Interfaz y contenido en catalán y castellano.
 
-**Estado:** Fase 1 terminada (esqueleto, navegación, contenido de ejemplo, idiomas y fórmulas).
+**Estado:** Fase 2 terminada (estudio con los cuatro tipos de tarjeta, repaso espaciado y progreso guardado en el dispositivo).
 
 ## Instalar en Windows (solo la primera vez)
 
@@ -31,7 +31,7 @@ Para verla en el móvil (misma wifi que el ordenador): `npm run dev -- --host` y
 | Comando | Qué hace | Qué deberías ver |
 | --- | --- | --- |
 | `npm run validar` | Revisa todas las tarjetas | `Todo correcto: no hay errores en el contenido.` |
-| `npm run test` | Pasa los tests automáticos | `Tests  29 passed` (el número irá creciendo) |
+| `npm run test` | Pasa los tests automáticos | `Tests  41 passed` (el número irá creciendo) |
 | `npm run build` | Prepara la app para publicar (carpeta `dist/`) | `✓ built in ...` |
 | `npm run comprobar` | Los tres anteriores seguidos | Lo mismo, sin errores |
 
@@ -42,7 +42,8 @@ Para verla en el móvil (misma wifi que el ordenador): `npm run dev -- --host` y
 | `contenido/` | Asignaturas, temas y tarjetas. **Lo único que hay que tocar para escribir contenido** (ver [CONTENIDO.md](CONTENIDO.md)) |
 | `src/marca.ts` | Nombre de la app y correo de avisos. Único sitio donde aparecen |
 | `src/contenido/` | Lectura y validación del contenido |
-| `src/motor/` | Generador y corrector de problemas |
+| `src/motor/` | Generador y corrector de problemas, y repaso espaciado |
+| `src/datos/` | Guardado del progreso en el navegador |
 | `src/pantallas/`, `src/componentes/` | Lo que se ve |
 | `src/i18n/` | Textos de la interfaz (`ca.json`, `es.json`) |
 | `scripts/` | El comando `npm run validar` |

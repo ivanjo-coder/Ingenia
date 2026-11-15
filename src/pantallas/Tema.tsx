@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router'
+import { BloqueRepaso } from '../componentes/BloqueRepaso'
 import { Aviso, Volver } from '../componentes/Marco'
 import { VistaTarjeta } from '../componentes/VistaTarjeta'
 import { biblioteca } from '../contenido/cargar'
@@ -34,7 +35,10 @@ export function Tema() {
       <Volver a={`/asignatura/${asignatura.id}`} texto={elegir(asignatura.nombre, idioma)} />
       <h1 className="text-2xl font-bold tracking-tight">{elegir(tema.nombre, idioma)}</h1>
 
-      <div role="group" aria-label={t('tema.filtro')} className="-mx-4 mt-4 flex gap-2 overflow-x-auto px-4 py-1">
+      <BloqueRepaso tarjetas={tema.tarjetas} a={`/repaso/${asignatura.id}/${tema.id}`} textoBoton={t('repaso.estudiar')} conFases />
+
+      <h2 className="mt-7 text-sm font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-400">{t('repaso.todasLasTarjetas')}</h2>
+      <div role="group" aria-label={t('tema.filtro')} className="-mx-4 mt-2 flex gap-2 overflow-x-auto px-4 py-1">
         <button type="button" aria-pressed={filtro === 'todas'} onClick={() => setFiltro('todas')} className={boton(filtro === 'todas')}>
           {t('tema.todas')} ({tema.tarjetas.length})
         </button>

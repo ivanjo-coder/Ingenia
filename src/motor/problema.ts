@@ -17,6 +17,16 @@ export function azarConSemilla(semilla: number): Azar {
   }
 }
 
+/** Devuelve una copia de la lista en orden aleatorio (todas las ordenaciones igual de probables). */
+export function barajar<T>(lista: readonly T[], azar: Azar = Math.random): T[] {
+  const copia = [...lista]
+  for (let i = copia.length - 1; i > 0; i--) {
+    const j = Math.floor(azar() * (i + 1))
+    ;[copia[i], copia[j]] = [copia[j], copia[i]]
+  }
+  return copia
+}
+
 function decimalesDe(n: number): number {
   const texto = String(n)
   if (texto.includes('e-')) return Number(texto.split('e-')[1])

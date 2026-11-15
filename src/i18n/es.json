@@ -1,18 +1,72 @@
 {
-  "nav": { "inicio": "Inicio", "ajustes": "Ajustes", "sobre": "Sobre la app", "principal": "Navegación principal", "saltar": "Saltar al contenido" },
-  "idioma": { "titulo": "Idioma", "ca": "Català", "es": "Castellano", "cambiar": "Cambiar idioma" },
-  "inicio": { "titulo": "Asignaturas", "subtitulo": "Elige una asignatura para empezar a estudiar.", "proximamente": "Próximamente" },
-  "asignatura": { "temas": "Temas", "tarjetas_one": "{{count}} tarjeta", "tarjetas_other": "{{count}} tarjetas", "sinTemas": "Esta asignatura todavía no tiene contenido." },
-  "tema": { "todas": "Todas", "verRespuesta": "Ver respuesta", "verResolucion": "Ver resolución", "ejemplo": "Datos de ejemplo: cambian cada vez que sale el problema.", "resultado": "Resultado", "correcta": "Correcta", "incorrecta": "Incorrecta", "filtro": "Filtrar por tipo de tarjeta" },
-  "tipo": { "concepto": "Concepto", "formula": "Fórmula", "test": "Test", "problema": "Problema" },
-  "tipoPlural": { "concepto": "Conceptos", "formula": "Fórmulas", "test": "Tests", "problema": "Problemas" },
-  "formula": { "simbolo": "Símbolo", "significado": "Significado", "unidad": "Unidad" },
+  "nav": {
+    "inicio": "Inicio",
+    "ajustes": "Ajustes",
+    "sobre": "Sobre la app",
+    "principal": "Navegación principal",
+    "saltar": "Saltar al contenido"
+  },
+  "idioma": {
+    "titulo": "Idioma",
+    "ca": "Català",
+    "es": "Castellano",
+    "cambiar": "Cambiar idioma"
+  },
+  "inicio": {
+    "titulo": "Asignaturas",
+    "subtitulo": "Elige una asignatura para empezar a estudiar.",
+    "proximamente": "Próximamente"
+  },
+  "asignatura": {
+    "temas": "Temas",
+    "tarjetas_one": "{{count}} tarjeta",
+    "tarjetas_other": "{{count}} tarjetas",
+    "sinTemas": "Esta asignatura todavía no tiene contenido."
+  },
+  "tema": {
+    "todas": "Todas",
+    "verRespuesta": "Ver respuesta",
+    "verResolucion": "Ver resolución",
+    "ejemplo": "Datos de ejemplo: cambian cada vez que sale el problema.",
+    "resultado": "Resultado",
+    "correcta": "Correcta",
+    "incorrecta": "Incorrecta",
+    "filtro": "Filtrar por tipo de tarjeta"
+  },
+  "tipo": {
+    "concepto": "Concepto",
+    "formula": "Fórmula",
+    "test": "Test",
+    "problema": "Problema"
+  },
+  "tipoPlural": {
+    "concepto": "Conceptos",
+    "formula": "Fórmulas",
+    "test": "Tests",
+    "problema": "Problemas"
+  },
+  "formula": {
+    "simbolo": "Símbolo",
+    "significado": "Significado",
+    "unidad": "Unidad"
+  },
   "volver": "Volver",
   "revisar": "Pendiente de revisar",
   "aviso": "Contenido creado por estudiantes. Puede contener errores: contrasta siempre con el material oficial de la asignatura.",
-  "noEncontrado": { "titulo": "Aquí no hay nada", "texto": "Esta página no existe o ha cambiado de sitio.", "inicio": "Ir al inicio" },
-  "errorContenido": { "titulo": "Hay errores en el contenido", "texto": "Arregla estos archivos de la carpeta contenido/ y la app volverá a funcionar. El comando «npm run validar» da más detalles." },
-  "ajustes": { "titulo": "Ajustes" },
+  "noEncontrado": {
+    "titulo": "Aquí no hay nada",
+    "texto": "Esta página no existe o ha cambiado de sitio.",
+    "inicio": "Ir al inicio"
+  },
+  "errorContenido": {
+    "titulo": "Hay errores en el contenido",
+    "texto": "Arregla estos archivos de la carpeta contenido/ y la app volverá a funcionar. El comando «npm run validar» da más detalles."
+  },
+  "ajustes": {
+    "titulo": "Ajustes",
+    "nuevasTitulo": "Tarjetas nuevas al día",
+    "nuevasTexto": "Máximo de tarjetas nuevas que te enseñamos cada día. Los repasos no cuentan."
+  },
   "sobre": {
     "titulo": "Sobre {{nombre}}",
     "intro": "{{nombre}} es una app para estudiar asignaturas de ingeniería con tarjetas, tests y problemas con números que cambian. La hacemos estudiantes, para estudiantes.",
@@ -26,5 +80,60 @@
     "privacidad": "Privacidad",
     "privacidadTexto": "No hay cuentas ni registro, y no usamos rastreadores publicitarios. Tu progreso se guarda solo en este dispositivo.",
     "contenido": "Sobre el contenido"
+  },
+  "estudio": {
+    "verRespuesta": "Ver respuesta",
+    "comprobar": "Comprobar",
+    "noLoSe": "No lo sé, ver la solución",
+    "tuResultado": "Tu resultado",
+    "noEsNumero": "Escribe solo un número, con coma o punto decimal. Ejemplo: 12,5",
+    "acierto": "¡Correcto!",
+    "fallo": "No es correcto",
+    "tuRespuesta": "tu respuesta",
+    "solucion": "Solución",
+    "resolucion": "Resolución paso a paso",
+    "avisarError": "¿Ves un error en esta tarjeta? Avísanos",
+    "errorAsunto": "Error en la tarjeta"
+  },
+  "repaso": {
+    "todo": "Repaso de hoy",
+    "estudiar": "Estudiar",
+    "repasarAhora": "Repasar ahora",
+    "pendientes_one": "{{count}} tarjeta para hoy",
+    "pendientes_other": "{{count}} tarjetas para hoy",
+    "alDia": "Estás al día",
+    "alDiaTexto": "No te toca ninguna tarjeta ahora mismo.",
+    "progreso": "Progreso de la sesión",
+    "quedan_one": "queda {{count}}",
+    "quedan_other": "quedan {{count}}",
+    "comoHaIdo": "¿Te la sabías?",
+    "comoHaCostado": "¿Cuánto te ha costado?",
+    "volvera": "Volverá a salir dentro de un rato",
+    "terminado": "¡Sesión terminada!",
+    "respuestas_one": "Has respondido {{count}} tarjeta.",
+    "respuestas_other": "Has respondido {{count}} tarjetas.",
+    "nadaPendiente": "Estás al día",
+    "nadaPendienteTexto": "No te toca ninguna tarjeta ahora mismo. Vuelve mañana.",
+    "masNuevas": "Estudiar más tarjetas nuevas",
+    "nuevas": "Nuevas",
+    "aprendiendo": "Aprendiendo",
+    "dominadas": "Dominadas",
+    "todasLasTarjetas": "Todas las tarjetas del tema"
+  },
+  "nota": {
+    "1": "Otra vez",
+    "2": "Difícil",
+    "3": "Bien",
+    "4": "Fácil"
+  },
+  "intervalo": {
+    "min_one": "{{count}} min",
+    "min_other": "{{count}} min",
+    "h_one": "{{count}} h",
+    "h_other": "{{count}} h",
+    "d_one": "{{count}} día",
+    "d_other": "{{count}} días",
+    "mes_one": "{{count}} mes",
+    "mes_other": "{{count}} meses"
   }
 }

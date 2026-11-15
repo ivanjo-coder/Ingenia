@@ -20,13 +20,13 @@ export function EtiquetaTipo({ tipo }: { tipo: TipoTarjeta }) {
   return <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${COLORES[tipo]}`}>{t(`tipo.${tipo}`)}</span>
 }
 
-function Figura({ asignaturaId, nombre, alt }: { asignaturaId: string; nombre?: string; alt: string }) {
+export function Figura({ asignaturaId, nombre, alt }: { asignaturaId: string; nombre?: string; alt: string }) {
   const url = nombre ? urlFigura(rutaFigura(asignaturaId, nombre)) : undefined
   if (!url) return null
   return <img src={url} alt={alt} loading="lazy" className="mt-3 max-h-64 w-full rounded-lg border border-slate-200 bg-white object-contain dark:border-slate-700" />
 }
 
-function ReversoFormula({ tarjeta, idioma }: { tarjeta: TarjetaFormula; idioma: Idioma }) {
+export function ReversoFormula({ tarjeta, idioma }: { tarjeta: TarjetaFormula; idioma: Idioma }) {
   const { t } = useTranslation()
   return (
     <>

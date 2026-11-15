@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type { TarjetaProblema } from '../src/contenido/esquema'
 import {
   azarConSemilla,
+  barajar,
   calcular,
   corregir,
   dentroDeTolerancia,
@@ -142,5 +143,18 @@ describe('texto con números', () => {
 
   it('encuentra los huecos de un texto', () => {
     expect(huecosDe('Con {d} mm: $\\frac{F}{A} = \\val{x}$ y {otro}')).toEqual(['d', 'x', 'otro'])
+  })
+})
+
+describe('barajar', () => {
+  it('no pierde elementos y reparte las posiciones por igual', () => {
+    const azar = azarConSemilla(5)
+    const primeras = [0, 0, 0, 0]
+    for (let i = 0; i < 4000; i++) {
+      const r = barajar([0, 1, 2, 3], azar)
+      expect([...r].sort()).toEqual([0, 1, 2, 3])
+      primeras[r[0]]++
+    }
+    for (const veces of primeras) expect(veces).toBeGreaterThan(850)
   })
 })

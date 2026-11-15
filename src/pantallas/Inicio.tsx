@@ -1,15 +1,19 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
+import { BloqueRepaso } from '../componentes/BloqueRepaso'
 import { biblioteca } from '../contenido/cargar'
 import { elegir } from '../contenido/texto'
 import { useIdioma } from '../i18n'
+
+const TODAS = biblioteca.asignaturas.flatMap((a) => a.temas.flatMap((tema) => tema.tarjetas))
 
 export function Inicio() {
   const { t } = useTranslation()
   const idioma = useIdioma()
   return (
-    <>
-      <h1 className="text-2xl font-bold tracking-tight">{t('inicio.titulo')}</h1>
+    <div className="-mt-4">
+      <BloqueRepaso tarjetas={TODAS} a="/repaso" textoBoton={t('repaso.repasarAhora')} />
+      <h1 className="mt-7 text-2xl font-bold tracking-tight">{t('inicio.titulo')}</h1>
       <p className="mt-1 text-slate-600 dark:text-slate-400">{t('inicio.subtitulo')}</p>
       <ul className="mt-5 space-y-3">
         {biblioteca.asignaturas.map((a) => {
@@ -42,6 +46,6 @@ export function Inicio() {
           )
         })}
       </ul>
-    </>
+    </div>
   )
 }

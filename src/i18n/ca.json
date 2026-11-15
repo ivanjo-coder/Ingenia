@@ -1,18 +1,72 @@
 {
-  "nav": { "inicio": "Inici", "ajustes": "Configuració", "sobre": "Sobre l'app", "principal": "Navegació principal", "saltar": "Salta al contingut" },
-  "idioma": { "titulo": "Idioma", "ca": "Català", "es": "Castellano", "cambiar": "Canvia l'idioma" },
-  "inicio": { "titulo": "Assignatures", "subtitulo": "Tria una assignatura per començar a estudiar.", "proximamente": "Properament" },
-  "asignatura": { "temas": "Temes", "tarjetas_one": "{{count}} targeta", "tarjetas_other": "{{count}} targetes", "sinTemas": "Aquesta assignatura encara no té contingut." },
-  "tema": { "todas": "Totes", "verRespuesta": "Mostra la resposta", "verResolucion": "Mostra la resolució", "ejemplo": "Dades d'exemple: canvien cada vegada que surt el problema.", "resultado": "Resultat", "correcta": "Correcta", "incorrecta": "Incorrecta", "filtro": "Filtra per tipus de targeta" },
-  "tipo": { "concepto": "Concepte", "formula": "Fórmula", "test": "Test", "problema": "Problema" },
-  "tipoPlural": { "concepto": "Conceptes", "formula": "Fórmules", "test": "Tests", "problema": "Problemes" },
-  "formula": { "simbolo": "Símbol", "significado": "Significat", "unidad": "Unitat" },
+  "nav": {
+    "inicio": "Inici",
+    "ajustes": "Configuració",
+    "sobre": "Sobre l'app",
+    "principal": "Navegació principal",
+    "saltar": "Salta al contingut"
+  },
+  "idioma": {
+    "titulo": "Idioma",
+    "ca": "Català",
+    "es": "Castellano",
+    "cambiar": "Canvia l'idioma"
+  },
+  "inicio": {
+    "titulo": "Assignatures",
+    "subtitulo": "Tria una assignatura per començar a estudiar.",
+    "proximamente": "Properament"
+  },
+  "asignatura": {
+    "temas": "Temes",
+    "tarjetas_one": "{{count}} targeta",
+    "tarjetas_other": "{{count}} targetes",
+    "sinTemas": "Aquesta assignatura encara no té contingut."
+  },
+  "tema": {
+    "todas": "Totes",
+    "verRespuesta": "Mostra la resposta",
+    "verResolucion": "Mostra la resolució",
+    "ejemplo": "Dades d'exemple: canvien cada vegada que surt el problema.",
+    "resultado": "Resultat",
+    "correcta": "Correcta",
+    "incorrecta": "Incorrecta",
+    "filtro": "Filtra per tipus de targeta"
+  },
+  "tipo": {
+    "concepto": "Concepte",
+    "formula": "Fórmula",
+    "test": "Test",
+    "problema": "Problema"
+  },
+  "tipoPlural": {
+    "concepto": "Conceptes",
+    "formula": "Fórmules",
+    "test": "Tests",
+    "problema": "Problemes"
+  },
+  "formula": {
+    "simbolo": "Símbol",
+    "significado": "Significat",
+    "unidad": "Unitat"
+  },
   "volver": "Torna",
   "revisar": "Pendent de revisar",
   "aviso": "Contingut creat per estudiants. Pot contenir errors: contrasta sempre amb el material oficial de l'assignatura.",
-  "noEncontrado": { "titulo": "Aquí no hi ha res", "texto": "Aquesta pàgina no existeix o ha canviat de lloc.", "inicio": "Ves a l'inici" },
-  "errorContenido": { "titulo": "Hi ha errors al contingut", "texto": "Arregla aquests fitxers de la carpeta contenido/ i l'app tornarà a funcionar. L'ordre «npm run validar» dona més detalls." },
-  "ajustes": { "titulo": "Configuració" },
+  "noEncontrado": {
+    "titulo": "Aquí no hi ha res",
+    "texto": "Aquesta pàgina no existeix o ha canviat de lloc.",
+    "inicio": "Ves a l'inici"
+  },
+  "errorContenido": {
+    "titulo": "Hi ha errors al contingut",
+    "texto": "Arregla aquests fitxers de la carpeta contenido/ i l'app tornarà a funcionar. L'ordre «npm run validar» dona més detalls."
+  },
+  "ajustes": {
+    "titulo": "Configuració",
+    "nuevasTitulo": "Targetes noves al dia",
+    "nuevasTexto": "Màxim de targetes noves que et mostrem cada dia. Els repassos no compten."
+  },
   "sobre": {
     "titulo": "Sobre {{nombre}}",
     "intro": "{{nombre}} és una app per estudiar assignatures d'enginyeria amb targetes, tests i problemes amb números que canvien. La fem estudiants, per a estudiants.",
@@ -26,5 +80,60 @@
     "privacidad": "Privadesa",
     "privacidadTexto": "No hi ha comptes ni registre, i no fem servir rastrejadors publicitaris. El teu progrés es desa només en aquest dispositiu.",
     "contenido": "Sobre el contingut"
+  },
+  "estudio": {
+    "verRespuesta": "Mostra la resposta",
+    "comprobar": "Comprova",
+    "noLoSe": "No ho sé, mostra la solució",
+    "tuResultado": "El teu resultat",
+    "noEsNumero": "Escriu només un número, amb coma o punt decimal. Exemple: 12,5",
+    "acierto": "Correcte!",
+    "fallo": "No és correcte",
+    "tuRespuesta": "la teva resposta",
+    "solucion": "Solució",
+    "resolucion": "Resolució pas a pas",
+    "avisarError": "Veus un error en aquesta targeta? Avisa'ns",
+    "errorAsunto": "Error a la targeta"
+  },
+  "repaso": {
+    "todo": "Repàs d'avui",
+    "estudiar": "Estudia",
+    "repasarAhora": "Repassa ara",
+    "pendientes_one": "{{count}} targeta per avui",
+    "pendientes_other": "{{count}} targetes per avui",
+    "alDia": "Estàs al dia",
+    "alDiaTexto": "Ara mateix no et toca cap targeta.",
+    "progreso": "Progrés de la sessió",
+    "quedan_one": "en queda {{count}}",
+    "quedan_other": "en queden {{count}}",
+    "comoHaIdo": "Te la sabies?",
+    "comoHaCostado": "Quant t'ha costat?",
+    "volvera": "Tornarà a sortir d'aquí a una estona",
+    "terminado": "Sessió acabada!",
+    "respuestas_one": "Has respost {{count}} targeta.",
+    "respuestas_other": "Has respost {{count}} targetes.",
+    "nadaPendiente": "Estàs al dia",
+    "nadaPendienteTexto": "Ara mateix no et toca cap targeta. Torna demà.",
+    "masNuevas": "Estudia més targetes noves",
+    "nuevas": "Noves",
+    "aprendiendo": "Aprenent",
+    "dominadas": "Dominades",
+    "todasLasTarjetas": "Totes les targetes del tema"
+  },
+  "nota": {
+    "1": "Una altra vegada",
+    "2": "Difícil",
+    "3": "Bé",
+    "4": "Fàcil"
+  },
+  "intervalo": {
+    "min_one": "{{count}} min",
+    "min_other": "{{count}} min",
+    "h_one": "{{count}} h",
+    "h_other": "{{count}} h",
+    "d_one": "{{count}} dia",
+    "d_other": "{{count}} dies",
+    "mes_one": "{{count}} mes",
+    "mes_other": "{{count}} mesos"
   }
 }

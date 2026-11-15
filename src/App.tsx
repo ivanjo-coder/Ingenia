@@ -10,6 +10,7 @@ import { NoEncontrado } from './pantallas/NoEncontrado'
 import { Sobre } from './pantallas/Sobre'
 
 // La pantalla de tarjetas lleva las fórmulas y la calculadora: se descarga solo al entrar en un tema.
+const Repaso = lazy(() => import('./pantallas/Repaso').then((m) => ({ default: m.Repaso })))
 const Tema = lazy(() => import('./pantallas/Tema').then((m) => ({ default: m.Tema })))
 
 export function App() {
@@ -21,6 +22,9 @@ export function App() {
           <Route index element={<Inicio />} />
           <Route path="asignatura/:asignaturaId" element={<Asignatura />} />
           <Route path="asignatura/:asignaturaId/tema/:temaId" element={<Suspense fallback={null}><Tema /></Suspense>} />
+          {['repaso', 'repaso/:asignaturaId', 'repaso/:asignaturaId/:temaId'].map((ruta) => (
+            <Route key={ruta} path={ruta} element={<Suspense fallback={null}><Repaso /></Suspense>} />
+          ))}
           <Route path="ajustes" element={<Ajustes />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="*" element={<NoEncontrado />} />
